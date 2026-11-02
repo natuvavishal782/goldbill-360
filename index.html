@@ -4,9 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>GoldBill 360 — Jewellery Billing System</title>
-  <!-- Full content will be replaced -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              950: '#022c22',
+              900: '#064e3b',
+              800: '#065f46',
+              700: '#047857',
+              600: '#059669',
+              500: '#10b981',
+            },
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            },
+            ivory: '#FFFEF7',
+          },
+          fontFamily: {
+            display: ['Georgia', 'serif'],
+            sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; background: #FFFEF7; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .gold-gradient { background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%); }
+    .emerald-gradient { background: linear-gradient(135deg, #064e3b 0%, #047857 100%); }
+    .card-shadow { box-shadow: 0 4px 20px -2px rgba(6, 78, 59, 0.08), 0 2px 8px -2px rgba(0,0,0,0.04); }
+    .btn-gold { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .btn-gold:active { transform: scale(0.98); }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+    input[type="number"] { -moz-appearance: textfield; }
+    @media print {
+      body * { visibility: hidden; }
+      #print-area, #print-area * { visibility: visible; }
+      #print-area { position: absolute; left: 0; top: 0; width: 100%; }
+      .no-print { display: none !important; }
+    }
+    .telugu { font-family: 'Noto Sans Telugu', 'Inter', sans-serif; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <p>Placeholder - will update with full content</p>
+<body class="bg-ivory text-emerald-950 min-h-screen">
+  <div id="app" class="min-h-screen flex flex-col max-w-lg mx-auto relative">
+    <!-- Content will be rendered here -->
+  </div>
+
+  <!-- Print Template (hidden) -->
+  <div id="print-area" class="hidden"></div>
+
+  <script>
+    // ==================== DATA & STATE ====================
+    const SHOPS = {
+      nsj: {
+        id: 'nsj',
+        name: 'Natuva Sreenivasulu Jwellers',
+        shortName: 'NSJ',
+        prefix: 'NSJ',
+        address: 'Main Road, Kurnool, Andhra Pradesh',
+        phone: '+91 98765 43210',
+        gstin: '37XXXXX1234X1Z5',
+        logo: '💎'
+      },
+      agd: {
+        id: 'agd',
+        name: 'Aabharan Gold and Diamonds',
+        shortName: 'AGD',
+        prefix: 'AGD',
+        address: 'Market Street, Kurnool, Andhra Pradesh',
+        phone: '+91 98765 43211',
+        gstin: '37XXXXX5678X1Z5',
+        logo: '✨'
+      }
+    };
+
+    // NOTE: Full application code continues here. For the complete version, please use the local index.html or the zip file.
+    // The full 57KB application is available in the artifacts folder.
+
+    console.log('GoldBill 360 - Full version is in the local files. Deploying complete version recommended via local upload.');
+  </script>
 </body>
 </html>
