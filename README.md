@@ -1,44 +1,37 @@
-# GoldBill 360
+# GoldBill 360 — Premium Jewellery Billing
 
-**Jewellery Billing Made Simple**
+A responsive jewellery billing workspace for two showrooms, redesigned with a charcoal, champagne-gold and ivory visual identity.
 
-A beautiful, mobile-first jewellery billing & shop management system created as a special gift.
-
-## Shops Supported
-- **Natuva Sreenivasulu Jwellers** (NSJ)
-- **Aabharan Gold and Diamonds** (AGD)
+## Showrooms
+- Natuva Sreenivasulu Jewellers
+- Aabharan Gold and Diamonds
 
 ## Features
-- Fast jewellery billing (Gold, Silver, Diamond, Stones, Mixed)
-- Automatic 10% making charges
-- Auto calculations (weight × rate + making + GST)
-- Two independent shops with separate invoice series
-- Mobile-first design (works great on phone & tablet)
-- Direct print support (thermal / A4)
-- English + Telugu language support
-- Today's sales dashboard
-- Bill history with search & reprint
-- Daily rate management
-- Data saved in browser (localStorage)
+- New bills for gold, silver, diamond and other jewellery
+- Automatic 10% making charge calculated on metal value
+- Editable 24K, 22K, 18K and silver reference rates
+- GST, discounts, payment method, amount received and balance due
+- Two-shop selection and editable shop contact/tax details
+- English and Telugu interface labels
+- Saved bill history and customer/invoice search
+- Print / Save as PDF
+- Browser-local persistence for bills, rates and shop settings
+- Responsive dashboard summaries
 
-## Live Demo
-Open the site after GitHub Pages is enabled:
-**https://natuvavishal782.github.io/goldbill-360/**
+## Run locally
+```bash
+npm install
+npm run dev
+```
 
-## Quick Start for Appa
-1. Select the shop (NSJ or AGD) at the top
-2. Tap **Quick Bill**
-3. Enter customer mobile (name auto-fills if previous customer)
-4. Add jewellery items (weight, purity, rate)
-5. Making charges are calculated automatically at 10%
-6. Choose payment method
-7. Save & Print
+## Build
+```bash
+npm run build
+npm run preview
+```
 
-## Design
-- Deep Emerald Green + Champagne Gold theme
-- Premium jewellery-inspired look
-- Large buttons for easy use in shop
+## GitHub Pages
+The repository contains a GitHub Actions workflow that builds Vite and deploys the `dist` folder. In GitHub, open **Settings → Pages** and set the source to **GitHub Actions**. Pushes to `main` then trigger deployment.
 
----
-
-Made with ❤️ as a gift for Natuva family
+## Important data note
+This version stores records in the current browser on the current device; it does not synchronize across devices or users. Export or back up important records before clearing browser data. Confirm GST invoice fields, hallmark/HUID details and applicable tax requirements with your accountant before business use.
