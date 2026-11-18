@@ -30,8 +30,8 @@ npm run build
 npm run preview
 ```
 
-## GitHub Pages
-The repository contains a GitHub Actions workflow that builds Vite and deploys the `dist` folder. In GitHub, open **Settings → Pages** and set the source to **GitHub Actions**. Pushes to `main` then trigger deployment.
+## Deployment
+The Vercel project is connected to this GitHub repository. Commits pushed to `main` trigger a Vercel deployment. The production project is `goldbill-360`.
 
 ## Important data note
 This version stores records in the current browser on the current device; it does not synchronize across devices or users. Export or back up important records before clearing browser data. Confirm GST invoice fields, hallmark/HUID details and applicable tax requirements with your accountant before business use.
